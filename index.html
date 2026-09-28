@@ -23,10 +23,11 @@
             <p>Laboratório de Web Design Responsivo</p>
         </div>
 
-        <nav class="navegacao">
+        <nav class="navegacao" aria-label="Navegação principal">
             <a href="#inicio">Início</a>
             <a href="#recursos">Recursos</a>
             <a href="#conteudo">Conteúdo</a>
+            <a href="#noticias">Notícias</a>
             <a href="#contato">Contato</a>
         </nav>
 
@@ -156,6 +157,50 @@
 
             </aside>
 
+        </section>
+
+        <section class="secao noticias" id="noticias" aria-labelledby="titulo-noticias">
+            <h2 id="titulo-noticias">Notícias</h2>
+
+            <div class="noticias-grid">
+                <article class="card noticia">
+                    <img src="https://picsum.photos/id/0/600/400" alt="Notebook em uma mesa de trabalho" width="600" height="400" loading="lazy">
+                    <h3>Primeiros passos com layouts flexíveis</h3>
+                    <p>Entenda como organizar componentes com Flexbox e permitir que eles mudem de linha conforme o espaço disponível.</p>
+                    <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_flexible_box_layout">Leia sobre Flexbox</a>
+                </article>
+
+                <article class="card noticia">
+                    <img src="https://picsum.photos/id/180/600/400" alt="Notebook e materiais de estudo sobre uma mesa" width="600" height="400" loading="lazy">
+                    <h3>Grades que acompanham o conteúdo</h3>
+                    <p>Combine auto-fit e minmax para distribuir artigos em colunas sem precisar definir uma quantidade fixa.</p>
+                    <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_grid_layout">Leia sobre CSS Grid</a>
+                </article>
+
+                <article class="card noticia">
+                    <img src="https://picsum.photos/id/20/600/400" alt="Materiais de trabalho e um notebook sobre uma mesa" width="600" height="400" loading="lazy">
+                    <h3>Uma interface para diferentes espaços</h3>
+                    <p>Descubra como as Media Queries reorganizam o conteúdo quando existe espaço para uma apresentação mais ampla.</p>
+                    <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_media_queries/Using_media_queries">Leia sobre Media Queries</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="secao guia" aria-labelledby="titulo-guia">
+            <div>
+                <h2 id="titulo-guia">Coloque a responsividade em prática</h2>
+                <p>Comece com uma coluna e mantenha o conteúdo legível. Aumente a janela aos poucos para descobrir quando os elementos podem ocupar a mesma linha.</p>
+                <p>Teste títulos maiores, palavras longas e imagens com diferentes proporções. O conteúdo deve continuar acessível em qualquer largura.</p>
+            </div>
+            <aside class="lateral" aria-labelledby="titulo-revisao">
+                <h3 id="titulo-revisao">Roteiro de revisão</h3>
+                <ul>
+                    <li>Confira a leitura dos textos.</li>
+                    <li>Teste os links de navegação.</li>
+                    <li>Observe a distribuição dos cards.</li>
+                    <li>Verifique a rolagem horizontal.</li>
+                </ul>
+            </aside>
         </section>
 
     </main>
